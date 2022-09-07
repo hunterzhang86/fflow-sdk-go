@@ -8,6 +8,7 @@ import (
 // Context 函数执行上文接口
 type Context interface {
 	Logger() Logger
+	Logs() []string
 	Storage() Storage
 	Metadata() Metadata
 	Context() context.Context

@@ -16,8 +16,8 @@ type Context interface {
 
 // Logger 函数执行日志接口
 type Logger interface {
+	Infof(message string, args ...any)
 	Warnf(message string, args ...any)
-	Logf(message string, args ...any)
 	Debugf(message string, args ...any)
 	Errorf(message string, args ...any)
 }
